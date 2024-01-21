@@ -1,4 +1,5 @@
 import sys
+import os
 
 import pandas as pd
 import numpy as np
@@ -13,8 +14,9 @@ class PredictPipeline:
 
     def predict(self, features):
         try:
-            model_path = 'artifact/model.pkl'
-            preprocessor_path = 'artifact/preprocessor.pkl'
+            model_path = os.path.join('artifact', 'model.pkl')
+            preprocessor_path = os.path.join('artifact', 'preprocessor.pkl')
+
             # print("before loading")
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path=preprocessor_path)
