@@ -6,6 +6,9 @@
         <h1>
             <legend>Student Exam Performance Prediction</legend>
         </h1>
+        <h3>
+            <legend>This model predicts your math score on various factors like gender, race, parental education, your writing and reading scores etc.</legend>
+        </h3>
         <div class="mb-3">
             <label class="form-label">Gender</label>
             <select class="form-control" name="gender" placeholder="Enter you Gender" required>
@@ -100,11 +103,11 @@
                 placeholder="Enter your Reading Score" min='0' max='100' />
         </div>
         <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+            <input class="btn btn-primary" type="submit" value="Predict your Math Score" required />
         </div>
     </form>
     <h2>
-       THE  prediction is {{results}}
+       Your math score is: {{results}}
     </h2>
    <body>
 </html>

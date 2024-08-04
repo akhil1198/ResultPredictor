@@ -62,11 +62,18 @@ class DataIngestion:
 
 if __name__ == "__main__":
     obj = DataIngestion()
+    print("******** Initiating Data Ingestion ********")
     train_data, test_data = obj.initiate_data_ingestion()
+    print("******** Completed Data Ingestion ********")
 
     data_transformation = DataTransformation()
+    print("******** Initiating Data Transformation ********")
+
     train_arr, test_arr, _ = data_transformation.initiate_data_transformation(
         train_data, test_data)
+    print("******** Completed Data Transformation ********")
 
     model_trainer = ModelTrainer()
-    print(model_trainer.initiate_model_trainer(train_arr, test_arr))
+    print("******** Initiating model Trainer ********")
+    r2_scr = model_trainer.initiate_model_trainer(train_arr, test_arr)
+    print("******** Model trained with R2 Score of ", r2_scr, "********")
