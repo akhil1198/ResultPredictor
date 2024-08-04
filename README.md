@@ -3,8 +3,8 @@ This is an end-to-end Machine Learning project which predicts the math score of 
 
 ### Running the project on your Local Server
 run `export PYTHONPATH=/Path/To/Your/Project` to set the pythonpath
-Start the data ingestion by running the data_ingestion.py file. This will create the train, test and raw.csv. It will also start the data transformation, preprocess the data and train the model. 
+Start the data ingestion by running the command `python3 data_ingestion.py` file. This will create the train, test and raw.csv. It will also start the data transformation, preprocess the data and train the model and save the model and preprocessing object and pickle file. 
 
 Once the model is trained, we can go ahead and start our application. 
-To start application, run the command python3 application.py to start the flask server. 
-The site will run at localhost:5000/predictdata
+To start application, run the command `python3 application.py` to start the flask server. 
+The site will run at `localhost:5000/predictdata`
