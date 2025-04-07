@@ -1,6 +1,7 @@
 # Student Math Score Predictor
 
-An end-to-end machine learning project that predicts students' math scores based on various demographic and performance factors.
+End-to-end ML pipeline that predicts students' math scores using demographic and performance data. Features data preprocessing, model comparison, Flask web interface, and AWS deployment with CI/CD integration.
+
 
 ## 📋 Overview
 
